@@ -10,25 +10,56 @@
 
     <title>Victory predict</title>
   </head>
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-2">
+    </div>
+      <div class="col-md-auto">
   <div class="page-header">
     <h1>Hi, summoner! <small> Welcome to victory predict </small></h1>
   </div>
-
-  <form method="GET | POST" action="/search/" name="field_name">
-  <div class="form-group">
-    <label for="name">Summoner name</label>
-    <input type="name" class="form-control" id="name" aria-describedby="name" name="field_one" placeholder="Please enter your name">
+      </div>
+      <div class="col col-lg-2">
+    </div>
+      </div>
   </div>
+
+
+
+  <div method="POST | GET" action="/search/" name="field_name">
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4">
+  <div class="form-group">
+    <label>Summoner name</label>
+    <input type="text" class="form-control" id="user_name" aria-describedby="name" name="user_name" placeholder="Please enter your name">
+  </div>
+    <div class="col-sm-4"></div>
+  </div>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-1">
     <div class="form-group">
-    <label for="serv">Server</label>
-    <select class="form-control" id="serv" name="field_two">
+    <label>Server</label>
+    <select class="form-control" id="server" name="server">
       <option>ru</option>
-      <option>eu</option>
-      <option>na</option>
+      <option>eu1</option>
+      <option>na1</option>
       <option>kr</option>
     </select>
+      </div>
+    <div class="col-sm-7"></div>
   </div>
-  <button type="submit" class="btn btn-primary">Search</button>
+  </div>
+
+    <div class="form-row text-center">
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Predict</button>
+      </div>
+    </div>
 </form>
 
   </body>
